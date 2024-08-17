@@ -24,5 +24,8 @@ def ordena(elemento):
     return elemento[1]
 
 
-usuarios.sort(key=ordena, reverse=True)
+# usuarios.sort(key=ordena, reverse=True)
+# print(usuarios)
+
+usuarios.sort(key=lambda el: el[1], reverse=True)
 print(usuarios)
